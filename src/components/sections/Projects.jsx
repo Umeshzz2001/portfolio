@@ -29,7 +29,7 @@ const Projects = () => {
       description: 'A simple and responsive personal portfolio website built with React JS to showcase my skills, projects, and education.',
       technologies: ['React', 'JavaScript', 'Tailwind css'],
       githubUrl: 'https://github.com/Umeshzz2001/portfolio.git',
-      liveUrl: 'https://social-analytics-demo.herokuapp.com',
+      liveUrl: 'https://umeshzz2001.github.io/portfolio/',
       imageUrl: 'https://static.resumegiants.com/wp-content/uploads/sites/25/2022/06/09105622/Professional-portfolio-736x414.webp',
       featured: true,
     },
