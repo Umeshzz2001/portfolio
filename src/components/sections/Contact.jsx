@@ -254,13 +254,7 @@ const Contact = () => {
               >
                 Email Me Directly
               </a>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                className="border border-primary-500 text-primary-400 hover:bg-primary-500 hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:scale-105"
-              >
-                Download Resume
-              </a>
+              
             </div>
           </div>
         </div>
