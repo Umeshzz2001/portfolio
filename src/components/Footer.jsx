@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="bg-slate-800/50 border-t border-slate-700/50 py-8 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4">
-          {/* Copyright */}
+         
           <div className="flex items-center text-gray-300 text-sm">
             <span>© {currentYear} Sandeepa Hiripitiya. Made with</span>
             <span className="ml-1">React</span>

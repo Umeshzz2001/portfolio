@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '/assets/logo.png'; 
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,17 +10,16 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      
-      // Update active section based on scroll position
+
       const sections = ['home', 'about', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
-      
+
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const offsetTop = element.offsetTop;
           const offsetBottom = offsetTop + element.offsetHeight;
-          
+
           if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
             setActiveSection(section);
             break;
@@ -27,7 +27,7 @@ const Navigation = () => {
         }
       }
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -42,9 +42,9 @@ const Navigation = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ 
+      element.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }
     setIsOpen(false);
@@ -63,15 +63,15 @@ const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('home')}
-            className="flex items-center space-x-2 text-white hover:text-primary-400 transition-colors duration-200">
-            <img 
-              src="src/Assets/logo.png" // Make sure path uses forward slashes
+            className="flex items-center space-x-2 text-white hover:text-primary-400 transition-colors duration-200"
+          >
+            <img
+              src={logo}
               alt="Logo"
               className="h-6 w-6 rounded-full object-cover"
             />
             <span className="text-xl font-bold">Sandeepa Hiripitiya</span>
           </button>
-
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

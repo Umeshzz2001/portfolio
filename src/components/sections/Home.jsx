@@ -2,6 +2,9 @@ import React from 'react';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import Typewriter from 'typewriter-effect';
 
+
+import profileImage from '/assets/image1.jpg';
+
 const Home = () => {
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
@@ -23,7 +26,7 @@ const Home = () => {
             <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-500 to-purple-600 p-1 animate-floating">
               <div className="w-full h-full rounded-full overflow-hidden bg-slate-800 flex items-center justify-center">
                 <img
-                  src="src/Assets/image1.jpg"
+                  src={profileImage} 
                   alt="Profile"
                   className="object-cover w-full h-full"
                 />
@@ -31,13 +34,13 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Main Content */}
+          
           <div className="space-y-6 animate-slide-up">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
               Sandeepa Hiripitiya
             </h1>
 
-            {/* Typing Effect */}
+            
             <div className="text-xl md:text-2xl text-primary-400 font-medium h-8">
               <Typewriter
                 options={{
@@ -51,8 +54,8 @@ const Home = () => {
             </div>
 
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Welcome to my portfolio! 👋  
-              Explore my projects and get to know my work.  
+              Welcome to my portfolio!
+              Explore my projects and get to know my work.
               Let's connect and create something great together!
             </p>
 
@@ -99,7 +102,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      
       <div className="flex justify-center pb-8 animate-bounce-subtle">
         <button
           onClick={scrollToNext}
@@ -110,7 +113,7 @@ const Home = () => {
         </button>
       </div>
 
-      {/* Welcome Section */}
+      
       <div className="py-20 px-4 bg-slate-800/50">
         <div className="max-w-4xl mx-auto text-center animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">

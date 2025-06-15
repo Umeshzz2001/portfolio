@@ -33,7 +33,7 @@ const About = () => {
             </div>
 
             <section className="space-y-8">
-              {/* University Education */}
+              
               <div>
                 <h4 className="text-xl font-semibold text-primary-300 mb-3">University Education</h4>
                 <div className="mb-6">
@@ -43,7 +43,7 @@ const About = () => {
                 </div>
               </div>
 
-              {/* School Education */}
+              
               <div>
                 <h4 className="text-xl font-semibold text-primary-300 mb-3">School Education</h4>
                 <div>
@@ -54,7 +54,7 @@ const About = () => {
               </div>
             </section>
 
-            {/* Relevant Coursework */}
+            
             <section className="mt-8">
               <h5 className="font-medium text-white mb-2">Relevant Coursework:</h5>
               <div className="flex flex-wrap gap-2">
@@ -70,7 +70,7 @@ const About = () => {
             </section>
           </article>
 
-          {/* Career Aspirations */}
+          
           <article className="animate-slide-in-right bg-slate-800/50 p-8 rounded-xl border border-slate-700/50 hover:border-primary-500/30 transition-all duration-300">
             <div className="flex items-center mb-6">
               <Target className="h-8 w-8 text-primary-400 mr-3" />
@@ -100,7 +100,7 @@ const About = () => {
 
 
 
-        {/* Technical Skills */}
+        
         <section className="mb-16 animate-slide-up">
           <div className="flex items-center justify-center mb-8">
             <Code className="h-8 w-8 text-primary-400 mr-3" />
